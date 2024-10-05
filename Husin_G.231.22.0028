@@ -1,0 +1,18 @@
+<?php
+
+// Membuat array
+$arrayData = [
+    "nama" => "Husin",
+    "usia" => 21,
+    "hobi" => ["Sangat suka coding"]
+];
+
+// Menampilkan tabel
+echo "<table border='1' cellpadding='10' cellspacing='0'>";
+echo "<tr><th>Item</th><th>Nilai</th></tr>";
+echo "<tr><td>Nama</td><td>" . $arrayData["nama"] . "</td></tr>";
+echo "<tr><td>Usia</td><td>" . $arrayData["usia"] . "</td></tr>";
+echo "<tr><td>Hobi</td><td>" . implode(", ", $arrayData["hobi"]) . "</td></tr>";
+echo "</table>";
+
+?>
